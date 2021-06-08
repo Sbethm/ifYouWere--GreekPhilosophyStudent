@@ -1,0 +1,34 @@
+//FONTS
+$headerFont: 'KoHo', sans-serif;
+$paraFont:'Niramit', sans-serif;
+
+//FONT SIZE
+$h1: '2.5rem';
+$h2: '2rem';
+$p: '1.8rem';
+$quest: '1.8rem';
+$ans: '1.8rem';
+
+//LINE HEIGHT
+$h1l: '2.7rem';
+$h2l: '2.2rem';
+$pl: '2rem';
+$questl: '2rem';
+$ans: '2rem';
+
+//COLORS
+$colors: (
+    'background': #f1f1f1,
+    'header': #f1f1f1,
+    'accent--yellow': rgb(251, 255, 0),
+    'accent--blue': rgb(22, 221, 228),
+    'answers': rgb(76, 192, 196),
+    'text--shadow': rgb(179, 96, 55),
+    'box--orange': rgb(240, 107, 40)
+);
+
+//FUNCTIONS
+@function colors($colorName) {
+    @return map-get($colors , $colorName);
+}
+

@@ -1,0 +1,28 @@
+main{
+    background: #f1f1f1;
+}
+
+.question{
+    font-family: $paraFont;
+    font-size: 2rem;
+    color: colors(box--orange);
+    background: rgba(44, 43, 44, 0.301);
+}
+
+.quiz-container{
+    position: relative;
+    margin: 30px 15px;
+    background: rgba(44, 43, 44, 0.301);
+}
+
+.answers{
+    background: rgba(44, 43, 44, 0.301);
+
+    & lable{
+        width: 100vw;
+        display: inline-block;
+        margin: 20px;
+
+    font-family: $paraFont;
+    }
+}

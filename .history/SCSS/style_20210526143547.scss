@@ -1,0 +1,115 @@
+@import "./resets", "./variables", "./grid";
+
+//GENERAL STYLES
+body {
+    background: colors(background);
+    font-size: 30px;
+}
+
+main {
+    margin-top: 110px; //header is 100px
+}
+
+p {
+    margin: 30px 10px;
+    font-family: $paraFont;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: colors(text--camo);
+    border-bottom: 4px solid colors(accent--yellow);
+    padding-bottom: 20px;
+}
+
+h2 {
+    margin: 20px 5px;
+    font-family: $headerFont;
+    font-size: 1.6rem;
+    line-height: 1.85rem;
+    color: colors(accent--blue);
+}
+
+//HEADER
+header {
+    height: 100px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background: colors(box--orange);
+    box-shadow: 1px 1px 5px colors(text--camo);
+    overflow: hidden;
+
+    & h1 {
+        width: 50vw;
+        position: relative;
+        padding: 0.8em;
+        z-index: 9;
+        font-family: $headerFont;
+        font-size: 40px; 
+        color: colors(header)
+        
+    }
+
+    & .btn--hamburger {
+        height: 3px;
+        width: 28px;
+        position: absolute;
+        top: 48px;
+        right: 1.5em;
+        z-index: 9;
+        background: colors(header);
+
+        &::before {
+            content: '';
+            height: 3px;
+            width: 28px;
+            position: absolute;
+            top: -8px;
+            z-index: 9;
+            background: colors(header);
+        }
+
+        &::after {
+            content: '';
+            height: 3px;
+            width: 20px;
+            position: absolute;
+            top: 8px;
+            z-index: 9;
+            background: colors(header);
+        }
+
+    }
+}
+
+.about--img {
+    height: 180px;
+    width: 350px;
+    background-image: url(../img/art-school-of-athens-1143741_1920.jpg);
+    background-size: 150%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 10px colors(text--camo), 12px 12px colors(accent--blue);
+}
+            
+.post--img {
+    height: 180px;
+    width: 250px;
+    background-image: url(../img/plato-3230487_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 10px colors(text--camo), 12px 12px colors(accent--blue);
+
+ /*   &::after {
+        content: '';
+        position: inherit;
+        z-index: -2;
+        height: 180px;
+        width: 350px;
+        background: colors(accent--blue);
+        top: 12px;
+        left: 15px;
+    }*/
+            
+}
+    
+

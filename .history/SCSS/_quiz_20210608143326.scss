@@ -1,0 +1,95 @@
+.main--quiz{
+    margin: 0px 15px;
+    height: calc(100vh - 200px);
+    width: calc(100vw - 30px);
+    background: rgba(44, 43, 44, 0.63);
+    overflow: scroll;
+}
+
+.slide{
+    width: 100%;
+    display: none;
+    z-index: 1;
+    opacity: 0;
+}
+
+.active-slide{
+    opacity: 1;
+    z-index: 2;
+    display: contents;
+}
+
+#quiz{
+    padding: 120px 40px 50px 40px;
+    height: fit-content;
+
+    & .question{
+        font-family: $paraFont;
+        color: rgba(44, 43, 44, 0.781);
+        font-size: 2.5rem;
+        line-height: 3rem;
+        text-indent: 25px;
+        background: colors(header);
+        padding: 20px;
+        border: 1px solid colors(header);
+        border-radius: 15px 15px 0 0;
+    }    
+
+   
+
+    & .answers{
+        background: ;
+        border: 1px solid colors(header);
+
+        & label{
+            display: inline-block;
+            margin: 20px;
+            font-family: $paraFont;
+            font-size: 2rem;
+            color: colors(accent--blue);
+            cursor: pointer;
+        }
+
+        & label input[type="radio"]:checked {
+            color: salmon;
+        }
+    }
+}
+
+
+
+button {
+    display: inline-block;
+    font-family: $paraFont;
+    font-size: 2rem;
+    color: rgba(44, 43, 44, 0.781);
+    background: colors(header);
+    padding: 15px;
+    margin: 15px 0px 30px 30px;
+    font-weight: 700;
+    text-align: center;
+    border: 1px solid colors(header);
+    border-radius: 15px;
+    box-shadow: -2px 2px 10px colors(text--camo), -12px 12px colors(accent--blue);
+    z-index: 2;
+
+    &:hover {
+        background: #929090;
+        color: colors(header);
+        @include transition-ease;
+    }
+}
+
+#results {
+    font-family: $paraFont;
+    color: colors(header);
+    font-size: 1.5rem;
+    line-height: 2.6rem;
+    text-indent: 25px;
+    padding: 20px;
+
+    & span {
+        color: colors(accent--yellow);
+        font-weight: 600;
+    }  
+}

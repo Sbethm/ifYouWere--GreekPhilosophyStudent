@@ -1,0 +1,28 @@
+//MAIN LAYOUT
+main {
+    margin-top: 150px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 100vh;
+}
+    
+.main--about {
+    grid-area: about;
+}
+
+.main--pre{
+    grid-area: pre;
+}
+
+.main--s {
+    grid-area: s;
+}
+
+.main--post {
+    grid-area: post;
+}
+
+.btn--quiz {
+    grid-area: btnQuiz;
+}

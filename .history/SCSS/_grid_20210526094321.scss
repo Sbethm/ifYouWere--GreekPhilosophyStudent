@@ -1,0 +1,50 @@
+//MAIN LAYOUT
+main {
+    margin-top: 150px;
+    display: grid;
+    grid-template-areas: "about--title about--title"
+                        "about--info about--pic"
+                        "pre--title pre--title"
+                        "pre--info pre--pic"
+                        "s--title s--title"
+                        "s--info s--pic"
+                        "post--title post--title"
+                        "post--info post--pic"
+                        "btn--quiz";
+}
+    
+.about--title {
+    grid-area: "about--title";
+}
+
+.about--info {
+    grid-area: "about--info";
+}
+
+.about--img {
+    grid-area: "about--img";
+}
+
+.pre--title {
+    grid-area: "pre--title";
+}
+
+.about--info {
+    grid-area: "about--info";
+}
+
+.about--info {
+    grid-area: "about--info";
+}
+
+.about--info {
+    grid-area: "about--info";
+}
+
+.about--info {
+    grid-area: "about--info";
+}
+
+.about--info {
+    grid-area: "about--info";
+}

@@ -1,0 +1,70 @@
+//MAIN LAYOUT
+main {
+    margin-top: 150px;
+    display: grid;
+    grid-tem: "about--title"
+                        "about--info" 
+                        "about--pic"
+                        "pre--title" 
+                        "pre--info" 
+                        "pre--pic"
+                        "s--title" 
+                        "s--info" 
+                        "s--pic"
+                        "post--title" 
+                        "post--info" 
+                        "post--pic"
+                        "btn--quiz";
+}
+    
+.about--title {
+    grid-area: "about--title";
+}
+
+.about--info {
+    grid-area: "about--info";
+}
+
+.about--img {
+    grid-area: "about--img";
+}
+
+.pre--title {
+    grid-area: "pre--title";
+}
+
+.pre--info {
+    grid-area: "pre--info";
+}
+
+.pre--img {
+    grid-area: "pre--img";
+}
+
+.s--title {
+    grid-area: "s--title";
+}
+
+.s--info {
+    grid-area: "s--info";
+}
+
+.s--img {
+    grid-area: "s--img";
+}
+
+.post--title {
+    grid-area: "post--title";
+}
+
+.post--info {
+    grid-area: "post--info";
+}
+
+.post--img {
+    grid-area: "post--img";
+}
+
+.btn--quiz {
+    grid-area: "btn--quiz";
+}

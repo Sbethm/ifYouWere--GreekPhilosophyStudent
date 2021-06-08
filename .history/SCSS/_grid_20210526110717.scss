@@ -1,0 +1,72 @@
+//MAIN LAYOUT
+main {
+    margin-top: 150px;
+    width: 100vw;
+    display: grid;
+    grid-template-areas: "aboutTitle"
+                        "aboutImg"
+                        "aboutInfo" 
+                        "preTitle"
+                        "preImg" 
+                        "preInfo" 
+                        "sTitle"
+                        "sImg" 
+                        "sInfo" 
+                        "postTitle" 
+                        "postImg" 
+                        "postInfo"
+                        "btnQuiz";
+    grid-template-columns: 100v;
+}
+    
+.about--title {
+    grid-area: aboutTitle;
+}
+
+.about--img {
+    grid-area: aboutImg;
+}
+
+.about--info {
+    grid-area: aboutInfo;
+}
+
+.pre--title {
+    grid-area: preTitle;
+}
+
+.pre--img {
+    grid-area: preImg;
+}
+
+.pre--info {
+    grid-area: preInfo;
+}
+
+.s--title {
+    grid-area: sTitle;
+}
+
+.s--img {
+    grid-area: sImg;
+}
+
+.s--info {
+    grid-area: sInfo;
+}
+
+.post--title {
+    grid-area: postTitle;
+}
+
+.post--img {
+    grid-area: postImg;
+}
+
+.post--info {
+    grid-area: postInfo;
+}
+
+.btn--quiz {
+    grid-area: btnQuiz;
+}

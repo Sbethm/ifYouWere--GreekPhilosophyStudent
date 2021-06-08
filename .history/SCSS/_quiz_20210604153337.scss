@@ -1,0 +1,47 @@
+.main--quiz{
+    position: relative;
+    margin: 0px 30px;
+    height: calc(100vh - 200px);
+    background: rgba(44, 43, 44, 0.63);
+}
+
+.slide{
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 100vw;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity;
+}
+
+.active--slide{
+    opacity: 1;
+    z-index: 2;
+    
+}
+
+.question{
+    font-family: $paraFont;
+    color: colors(header);
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    text-indent: 25px;
+}    
+
+.quiz-container{
+    position: relative;
+    padding: 0 20px;
+}
+
+.answers{
+
+    & lable{
+        width: 100vw;
+        display: inline-block;
+        margin: 20px 20px 0 20px;
+        font-family: $paraFont;
+        font-size: 2rem;
+        color: colors(accent--blue);
+    }
+}

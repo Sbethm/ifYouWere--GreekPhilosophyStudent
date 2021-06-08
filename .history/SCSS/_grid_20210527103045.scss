@@ -1,0 +1,33 @@
+//MAIN LAYOUT
+main {
+    margin-top: 130px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: auto;
+}
+    
+.main--about {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.main--pre{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.main--s {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.main--post {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.btn--quiz {
+    grid-column: 1;
+    grid-row: 5;
+}

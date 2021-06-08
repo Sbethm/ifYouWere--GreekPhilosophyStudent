@@ -1,0 +1,66 @@
+@import "./resets", "./variables";
+
+
+
+header {
+    height: 100px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 8;
+    background: colors(box--honey);
+    overflow: hidden;
+
+    & h1 {
+        width: 50vw;
+        position: relative;
+        padding: 1em 1em;
+        z-index: 9;
+        font-family: $headerFont;
+        font-size: 25px; 
+        text-shadow: -5px 2px colors(box--pastelBrown);
+        color: colors(box--camo);
+        
+    }
+
+    & .btn--hamburger {
+        height: 3px;
+        width: 28px;
+        position: absolute;
+        top: 48px;
+        right: 1.5em;
+        z-index: 9;
+        background: colors(box--camo);
+
+        &::before {
+            content: '';
+            height: 3px;
+            width: 28px;
+            position: absolute;
+            top: -8px;
+            z-index: 9;
+            background: colors(box--camo);
+        }
+
+        &::after {
+            content: '';
+            height: 3px;
+            width: 20px;
+            position: absolute;
+            top: 8px;
+            z-index: 9;
+            background: colors(box--camo);
+        }
+
+    }
+}
+
+main {
+    margin-top: 100px;
+
+    & .main--about {
+
+
+        & .main--about__philoStudent
+    }
+}

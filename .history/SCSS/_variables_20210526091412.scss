@@ -1,0 +1,17 @@
+$headerFont: 'KoHo', sans-serif;
+$paraFont:'Niramit', sans-serif;
+
+$colors: (
+    'background': #f7e8da,
+    'accent--yellow': rgb(233, 243, 95),
+    'accent--blue': rgb(73, 157, 208),
+    'box--camo': rgb(53, 49, 22),
+    'box--pastelBrown': rgb(177, 144, 127),
+    'box--naturalBlue':  ,
+    'box--richRed':  rgb(224, 53, 59)
+);
+
+@function colors($colorName) {
+    @return map-get($colors , $colorName);
+}
+

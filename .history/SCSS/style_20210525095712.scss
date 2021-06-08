@@ -1,0 +1,39 @@
+@import "./resets", "./variables";
+
+body {
+    background: colors(background);
+    height: 100vh;
+}
+
+header {
+    height: 100px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 8;
+    background: colors(box--honey);
+
+    & h1 {
+        width: 50vw;
+        position: relative;
+        font-family: $headerFont;
+        font-size: 25px; 
+        padding: 1em 1em;
+        color: colors(box--camo);
+        z-index: 9;
+    }
+
+    & .btn--hamburger {
+        height: 4px;
+        width: 8px;
+        position: absolute;
+        top: 20px
+        z-index: 9;
+        background: colors(box--camo);
+
+    }
+}
+
+main {
+    margin-top: 100px;
+}

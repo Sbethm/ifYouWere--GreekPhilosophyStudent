@@ -1,0 +1,38 @@
+.main--quiz{
+    position: relative;
+    margin: 30px 15px;
+    background: rgba(44, 43, 44, 0.63);
+}
+
+.slide{
+    position: absolute;
+    left: 0;
+    top: 120px;
+    width: 100vw;
+    z-index: 1;
+    opacisty
+}
+
+.question{
+    font-family: $paraFont;
+    color: colors(header);
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    text-indent: 25px;
+}    
+
+.quiz-container{
+    padding: 0 20px;
+}
+
+.answers{
+
+    & lable{
+        width: 100vw;
+        display: inline-block;
+        margin: 20px 20px 0 20px;
+        font-family: $paraFont;
+        font-size: 2rem;
+        color: colors(accent--blue);
+    }
+}

@@ -1,0 +1,15 @@
+.question{
+    font-family: $paraFont;
+    font-size: 2rem;
+    color: colors(box--orange);
+    background: rgba(44, 43, 44, 0.301);
+}
+
+.quiz-container{
+    background: rgba(44, 43, 44, 0.301);
+    display: grid;
+}
+
+.answers{
+    background: rgba(44, 43, 44, 0.301);
+}

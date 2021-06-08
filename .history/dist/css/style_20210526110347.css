@@ -1,0 +1,293 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+main {
+  margin-top: 150px;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "aboutTitle" "aboutImg" "aboutInfo"  "preTitle" "preImg"  "preInfo"  "sTitle" "sImg"  "sInfo"  "postTitle"  "postImg"  "postInfo" "btnQuiz";
+  -ms-grid-rows: (4, 48px 200px auto);
+      grid-template-rows: repeat(4, 48px 200px auto);
+  -ms-grid-columns: 100vw;
+      grid-template-columns: 100vw;
+}
+
+.about--title {
+  grid-area: aboutTitle;
+}
+
+.about--img {
+  grid-area: aboutImg;
+}
+
+.about--info {
+  grid-area: aboutInfo;
+}
+
+.pre--title {
+  grid-area: preTitle;
+}
+
+.pre--img {
+  grid-area: preImg;
+}
+
+.pre--info {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: preInfo;
+}
+
+.s--title {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: sTitle;
+}
+
+.s--img {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  grid-area: sImg;
+}
+
+.s--info {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  grid-area: sInfo;
+}
+
+.post--title {
+  -ms-grid-row: 10;
+  -ms-grid-column: 1;
+  grid-area: postTitle;
+}
+
+.post--img {
+  -ms-grid-row: 11;
+  -ms-grid-column: 1;
+  grid-area: postImg;
+}
+
+.post--info {
+  -ms-grid-row: 12;
+  -ms-grid-column: 1;
+  grid-area: postInfo;
+}
+
+.btn--quiz {
+  -ms-grid-row: 13;
+  -ms-grid-column: 1;
+  grid-area: btnQuiz;
+}
+
+body {
+  background: #f1f1f1;
+  font-size: 30px;
+}
+
+main {
+  margin-top: 120px;
+}
+
+p {
+  margin: 30px 10px;
+  font-family: "Niramit", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: #353116;
+}
+
+h2 {
+  margin: 10px;
+  font-family: "KoHo", sans-serif;
+  font-size: 1.5rem;
+  color: #3a95ce;
+}
+
+header {
+  height: 100px;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  background: #e27945;
+  overflow: hidden;
+}
+
+header h1 {
+  width: 50vw;
+  position: relative;
+  padding: 1em 1em;
+  z-index: 9;
+  font-family: "KoHo", sans-serif;
+  font-size: 25px;
+  text-shadow: -5px 1px #b36037;
+  color: #353116;
+}
+
+header .btn--hamburger {
+  height: 3px;
+  width: 28px;
+  position: absolute;
+  top: 48px;
+  right: 1.5em;
+  z-index: 9;
+  background: #353116;
+}
+
+header .btn--hamburger::before {
+  content: '';
+  height: 3px;
+  width: 28px;
+  position: absolute;
+  top: -8px;
+  z-index: 9;
+  background: #353116;
+}
+
+header .btn--hamburger::after {
+  content: '';
+  height: 3px;
+  width: 20px;
+  position: absolute;
+  top: 8px;
+  z-index: 9;
+  background: #353116;
+}
+
+.about--img {
+  height: 180px;
+  width: 250px;
+  background-image: url(../img/art-school-of-athens-1143741_1920.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.about--img::after {
+  content: '';
+  position: absolute;
+  z-index: -2;
+  height: 180px;
+  width: 250px;
+  background: #e9f35f;
+  top: 210px;
+  left: 20px;
+}
+
+.post--img {
+  height: 180px;
+  width: 250px;
+  background-image: url(../img/plato-3230487_1920.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.post--img::after {
+  content: '';
+  position: absolute;
+  z-index: -2;
+  height: 180px;
+  width: 250px;
+  background: #3a95ce;
+  top: 210px;
+  left: 20px;
+}
+/*# sourceMappingURL=style.css.map */

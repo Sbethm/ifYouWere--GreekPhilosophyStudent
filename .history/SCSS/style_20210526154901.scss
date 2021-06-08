@@ -1,0 +1,166 @@
+@import "./resets", "./variables", "./grid";
+
+//GENERAL STYLES
+body {
+    background: colors(background);
+    font-size: 30px;
+}
+
+main {
+    margin-top: 110px; //header is 100px
+}
+
+p {
+    margin: 50px 30px;
+    font-family: $paraFont;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    text-indent: 25px;
+    color: colors(header);
+    border-bottom: 4px solid colors(accent--blue);
+    padding-bottom: 20px;
+
+    & span {
+        color: colors(accent--yellow);
+        font-weight: 600;
+    }  
+}
+
+h2 {
+    position: relative;
+    
+    padding: 50px 15px;
+    font-family: $headerFont;
+    font-size: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    color: colors(accent--blue);
+
+       &::after {
+        content:'';
+        z-index: -1;
+        position: absolute;
+        top: -87px; left: 15px;
+        height: 2000px;
+        width: calc(100vw - 30px);
+        background-color: rgba(10, 0, 65, 0.301);
+    }
+}
+
+//HEADER
+header {
+    height: 100px;
+    width: 100vw;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    background: colors(box--orange);
+    box-shadow: 1px 1px 5px colors(text--camo);
+    overflow: hidden;
+
+    & h1 {
+        width: 50vw;
+        position: relative;
+        padding: 0.8em;
+        z-index: 9;
+        font-family: $headerFont;
+        font-size: 40px; 
+        color: colors(header)
+        
+    }
+
+    & .btn--hamburger {
+        height: 3px;
+        width: 28px;
+        position: absolute;
+        top: 48px;
+        right: 1.5em;
+        z-index: 9;
+        background: colors(header);
+
+        &::before {
+            content: '';
+            height: 3px;
+            width: 28px;
+            position: absolute;
+            top: -8px;
+            z-index: 9;
+            background: colors(header);
+        }
+
+        &::after {
+            content: '';
+            height: 3px;
+            width: 20px;
+            position: absolute;
+            top: 8px;
+            z-index: 9;
+            background: colors(header);
+        }
+
+    }
+}
+
+.about--title {
+
+    &::before {
+        content: '';
+        z-index: -2;
+        position: absolute;
+        top: 0; left: 0;
+        height: 200px;
+        width: 100vw;
+        background-image: url(../img/art-school-of-athens-1143741_1920.jpg);
+        background-size: 150%;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        filter: grayscale(100%);
+    }
+}
+
+/*
+.module {
+  position: relative;
+}
+.module::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url(graphic-to-be-filtered.jpg);
+  filter: grayscale(100%);
+}
+.module-inside {
+  //This will make it stack on top of the ::before 
+  position: relative;
+} */
+
+
+.about--img {
+   
+    
+    box-shadow: 2px 2px 10px colors(text--camo), 12px 12px colors(accent--blue);
+}
+            
+.post--img {
+    height: 180px;
+    width: 250px;
+    background-image: url(../img/plato-3230487_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 10px colors(text--camo), 12px 12px colors(accent--blue);
+
+ /*   &::after {
+        content: '';
+        position: inherit;
+        z-index: -2;
+        height: 180px;
+        width: 350px;
+        background: colors(accent--blue);
+        top: 12px;
+        left: 15px;
+    }*/
+            
+}
+    
+

@@ -1,0 +1,15 @@
+@import "./resets", "./variables";
+
+header {
+    height: 100px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+
+    &h1 {
+       font-family: $headerFont;
+       font-size: 20px; 
+       padding: 1em;
+       color:
+    }
+}
