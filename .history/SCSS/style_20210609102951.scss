@@ -1,4 +1,4 @@
-@import "./resets", "./variables", "./mixins", "./quiz", "./hamburger";
+@import "./resets", "./variables", "./mixins", "./quiz";
 
 //GENERAL STYLES
 html {
@@ -89,7 +89,6 @@ header {
         font-size: 2.5rem; 
         color: colors(header);
     }
-}
 
 //MAIN
 main {
