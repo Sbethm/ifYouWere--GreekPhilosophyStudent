@@ -145,12 +145,24 @@ input, select {
 }
 
 #quiz .answers label {
+  cursor: pointer;
+}
+
+#quiz .answers label [type="radio"] {
+  display: none;
+}
+
+#quiz .answers label [type="radio"] + span {
   display: inline-block;
   margin: 20px;
   font-family: "Niramit", sans-serif;
   font-size: 1.5rem;
   color: #16dde4;
   cursor: pointer;
+}
+
+#quiz .answers label [type="radio"]:checked + span {
+  color: #fbff00;
 }
 
 button {

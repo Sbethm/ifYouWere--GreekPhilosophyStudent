@@ -113,16 +113,16 @@ const myQuestions = [
     {
         question: "Your teacher founded a school on principals that you respect and follow in hopes of attaining further knowledge. What is the founding principal of this school?",
         answers: {
-            p: "A life of abstinence from sexual pleasure and physical extravagance along with frequent fasting and vegetarianism",
-            s: "Your teacher never founded a school and, in fact, claimed to know and teach nothing",
-            a: "A focus on cooperative research and a school that is run by the students"
+            p: "a life of abstinence from sexual pleasure and physical extravagance along with frequent fasting and vegetarianism",
+            s: "your teacher never founded a school and, in fact, claimed to know and teach nothing",
+            a: "a focus on cooperative research and a school that is run by the students"
         }
     },
     {
         question: "In the time of Ancient Greece, the gods were worshipped in temples by many. Was your teacher a devote worshipper?",
         answers: {
             p: "He believed that everything was made of numbers, even the gods, and that the number three was a symbol of the god, Apollo.",
-            s: "He never claimed to believe or not but he vigorously questioned those that did and the logic behind their beliefs.",
+            s: "He never claimed to believe or not but he vigorously questioned those that did and the logic behind their beliefs",
             a: "He threw away the idea that the gods had a hand in reason and instead observed the natural world to find reason."
         }
     }, 

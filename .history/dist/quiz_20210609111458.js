@@ -122,7 +122,7 @@ const myQuestions = [
         question: "In the time of Ancient Greece, the gods were worshipped in temples by many. Was your teacher a devote worshipper?",
         answers: {
             p: "He believed that everything was made of numbers, even the gods, and that the number three was a symbol of the god, Apollo.",
-            s: "He never claimed to believe or not but he vigorously questioned those that did and the logic behind their beliefs.",
+            s: "He never claimed to believe or not but he vigorously questioned those that did and the logic behind their beliefs",
             a: "He threw away the idea that the gods had a hand in reason and instead observed the natural world to find reason."
         }
     }, 

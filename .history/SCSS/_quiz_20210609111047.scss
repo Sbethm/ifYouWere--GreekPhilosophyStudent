@@ -40,6 +40,7 @@
 
         & label{
             cursor: pointer;
+            //
 
             & [type="radio"] {
                 display: none;
@@ -51,11 +52,7 @@
             font-family: $paraFont;
             font-size: 1.5rem;
             color: colors(accent--blue);
-            cursor: pointer;
-        }
-
-        & [type="radio"]:checked + span {
-            color: colors(accent--yellow);
+            cursor: pointer;*/
         }
         }
     }

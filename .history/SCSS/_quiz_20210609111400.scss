@@ -40,8 +40,9 @@
 
         & label{
             cursor: pointer;
+            //
 
-            & [type="radio"] {
+           // & [type="radio"] {
                 display: none;
             }
 

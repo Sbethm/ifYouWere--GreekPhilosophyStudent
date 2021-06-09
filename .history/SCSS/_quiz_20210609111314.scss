@@ -40,6 +40,7 @@
 
         & label{
             cursor: pointer;
+            //
 
             & [type="radio"] {
                 display: none;
@@ -54,7 +55,7 @@
             cursor: pointer;
         }
 
-        & [type="radio"]:checked + span {
+        & [type="radio"]:checked  {
             color: colors(accent--yellow);
         }
         }
