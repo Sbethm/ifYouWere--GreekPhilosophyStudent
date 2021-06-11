@@ -108,24 +108,26 @@ input, select {
   overflow: scroll;
 }
 
-.slide {
-  width: 100%;
-  display: none;
-  z-index: 1;
-  opacity: 0;
-}
-
-.active-slide {
-  opacity: 1;
-  z-index: 2;
-  display: contents;
-}
-
 #quiz {
+  width: calc(100vw - 50px);
   padding: 20px 10px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+}
+
+#quiz .slide {
+  display: none;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: opacity 2s;
+  transition: opacity 2s;
+}
+
+#quiz .active-slide {
+  opacity: 1;
+  z-index: 2;
+  display: contents;
 }
 
 #quiz .question {
@@ -145,6 +147,7 @@ input, select {
 }
 
 #quiz .answers label {
+  width: calc(100vw - 52px);
   cursor: pointer;
 }
 
@@ -154,15 +157,25 @@ input, select {
 
 #quiz .answers label [type="radio"] + span {
   display: inline-block;
-  margin: 20px;
+  padding: 20px;
   font-family: "Niramit", sans-serif;
   font-size: 1.5rem;
   color: #16dde4;
   cursor: pointer;
+  border-top: 1px solid #f1f1f1;
+}
+
+#quiz .answers label [type="radio"] + span:hover {
+  font-size: 2.1rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 #quiz .answers label [type="radio"]:checked + span {
   color: #fbff00;
+  font-size: 2.1rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 button {
@@ -216,8 +229,12 @@ button:hover {
     display: none;
     z-index: 1;
     opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
   .active-slide {
+    -webkit-transition: opacity 2s ease-in;
+    transition: opacity 2s ease-in;
     opacity: 1;
     z-index: 2;
     display: contents;
@@ -249,9 +266,13 @@ button:hover {
     font-size: 2rem;
     color: #16dde4;
     cursor: pointer;
+    border: 1px solid #f1f1f1;
   }
   #quiz .answers label input[type="radio"]:checked {
     color: salmon;
+  }
+  #quiz .answers label:hover {
+    font-size: 2.2rem;
   }
   button {
     display: inline-block;
