@@ -62,6 +62,7 @@ function showResults() {
             results.innerHTML = `<div class='results'>You can't seem to decide which philosopher to follow. Perhaps you should start your own school of philosophy! So, go ahead, grab your tools, build a time machine, and teach those Ancient Greeks your new crazy, philosophical ideas!</div>`;
         }
             quizContainer.style.display = `none`;
+            results.style.display = `content`;
             submit.style.display = `none`;
             previousButton.style.display = `none`;
             returnButton.style.display = `inline-block`;

@@ -65,7 +65,6 @@ function showResults() {
             submit.style.display = `none`;
             previousButton.style.display = `none`;
             returnButton.style.display = `inline-block`;
-            
     });
 };
 

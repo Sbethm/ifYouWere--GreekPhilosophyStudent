@@ -65,7 +65,6 @@ function showResults() {
             submit.style.display = `none`;
             previousButton.style.display = `none`;
             returnButton.style.display = `inline-block`;
-            
     });
 };
 
@@ -169,6 +168,3 @@ nextButton.addEventListener('click', showNextSlide);
 
 //submit button eventListener (showResults)
 submit.addEventListener('click', showResults);
-
-//return to beginning of the quiz
-returnButton.addEventListener('click', function(){location.reload()});

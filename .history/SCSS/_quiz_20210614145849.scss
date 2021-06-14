@@ -1,6 +1,6 @@
 .main--quiz{
     margin: 0px 15px;
-    height: calc(100vh - 200px); //200px is for the footer and header which are 100px each
+    height: calc(100vh - 180px);
     width: calc(100vw - 30px);
     background: rgba(44, 43, 44, 0.63);
     overflow: scroll;
@@ -111,7 +111,6 @@ button {
 
 #return {
     display: none;
-    margin-bottom: 40px;
 }
 
 //TABLET STYLING

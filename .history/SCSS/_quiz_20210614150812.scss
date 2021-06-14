@@ -96,6 +96,7 @@ button {
 }
 
 #results {
+    height: fit-content;
     font-family: $paraFont;
     color: colors(header);
     font-size: 1.8rem;
@@ -111,7 +112,6 @@ button {
 
 #return {
     display: none;
-    margin-bottom: 40px;
 }
 
 //TABLET STYLING

@@ -64,8 +64,7 @@ function showResults() {
             quizContainer.style.display = `none`;
             submit.style.display = `none`;
             previousButton.style.display = `none`;
-            returnButton.style.display = `inline-block`;
-            
+            return.style.display = `content`;
     });
 };
 
@@ -87,8 +86,6 @@ function showSlide(n) {
         submit.style.display = 'none';
     }
 }
-
-
 
 function showNextSlide() {
     showSlide(currentSlide + 1);
@@ -157,7 +154,7 @@ const previousButton = document.getElementById('previous');
 const nextButton = document.getElementById('next');
 const slides = document.querySelectorAll('.slide');
 let currentSlide = 0;
-const returnButton = document.getElementById('return');
+const return = document.getElementById('return')
 
 // Show the first slide
 showSlide(currentSlide);
@@ -169,6 +166,3 @@ nextButton.addEventListener('click', showNextSlide);
 
 //submit button eventListener (showResults)
 submit.addEventListener('click', showResults);
-
-//return to beginning of the quiz
-returnButton.addEventListener('click', function(){location.reload()});
