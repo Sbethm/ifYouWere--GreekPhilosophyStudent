@@ -172,34 +172,17 @@ main {
 .about--title {
     display: flex;
     height: 200px;
-    width: calc(100vw - 30px);
     padding: 0 15px;
     justify-items: center;
     align-items: center;
-
-    &::before {
-        content: '';
-        z-index: -2;
-        position: absolute;
-        top: 100px; left: 0;
-        height: 200px;
-        width: 100vw;
-        background-image: url(../img/art-school-of-athens-1143741_1920.jpg);
-        background-size: 150%;
-        background-position: bottom;
-        background-repeat: no-repeat;
-        filter: grayscale(100%);
-    }
-}
-
-#main--about__title {
-    width: calc(100vw - 30px);
 }
 
 #main--about__title::after {
         top: -500px;//Top is different here in order the stretch the ::after element above and behind the header 
         left: 0px;   
     }
+
+#main--about__title::
 
 //PYTHAGORAS SECTION  
 .pre--img {
@@ -344,16 +327,12 @@ footer {
     //ABOUT SECTION
     .about--title {
         height: 425px;
+        width: 100vw;
     
         &::before {
             top: 150px; left: 0;
             height: 425px;
-            background-size: 125%;
         }
-    }
-
-    #main--about__title::after {
-        top: -500px;//Top is different here in order the stretch the ::after element above and behind the header  
     }
     
     //PYTHAGORAS SECTION  

@@ -192,10 +192,6 @@ main {
     }
 }
 
-#main--about__title {
-    width: calc(100vw - 30px);
-}
-
 #main--about__title::after {
         top: -500px;//Top is different here in order the stretch the ::after element above and behind the header 
         left: 0px;   
@@ -344,6 +340,8 @@ footer {
     //ABOUT SECTION
     .about--title {
         height: 425px;
+        justify-content: center;
+        align-content: center;
     
         &::before {
             top: 150px; left: 0;
@@ -353,7 +351,8 @@ footer {
     }
 
     #main--about__title::after {
-        top: -500px;//Top is different here in order the stretch the ::after element above and behind the header  
+        top: -500px;//Top is different here in order the stretch the ::after element above and behind the header 
+        left: -57px;   
     }
     
     //PYTHAGORAS SECTION  

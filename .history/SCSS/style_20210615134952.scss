@@ -344,6 +344,8 @@ footer {
     //ABOUT SECTION
     .about--title {
         height: 425px;
+        justify-content: center;
+        align-content: center;
     
         &::before {
             top: 150px; left: 0;

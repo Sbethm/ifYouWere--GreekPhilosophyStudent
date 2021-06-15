@@ -579,6 +579,7 @@ main {
   display: -ms-flexbox;
   display: flex;
   height: 200px;
+  width: calc(100vw - 30px);
   padding: 0 15px;
   justify-items: center;
   -webkit-box-align: center;
@@ -600,6 +601,10 @@ main {
   background-repeat: no-repeat;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+}
+
+#main--about__title {
+  width: calc(100vw - 30px);
 }
 
 #main--about__title::after {
@@ -731,6 +736,10 @@ footer {
     top: 150px;
     left: 0;
     height: 425px;
+    background-size: 125%;
+  }
+  #main--about__title::after {
+    top: -500px;
   }
   .pre--img img {
     height: 500px;
