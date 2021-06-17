@@ -101,11 +101,12 @@ input, select {
 }
 
 .main--quiz {
-  margin: 0px 15px;
-  height: calc(100vh - 200px);
   width: calc(100vw - 30px);
+  padding-top: 100px;
+  margin: 0px 15px;
   background: rgba(44, 43, 44, 0.63);
   overflow: scroll;
+  scroll-behavior: smooth;
 }
 
 #quiz {
@@ -223,9 +224,6 @@ button:hover {
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1366px) and (orientation: landscape) {
   /* Styles */
-  .main--quiz {
-    height: calc(100vh - 300px);
-  }
   #quiz .question {
     font-size: 2rem;
     line-height: 2.8rem;
@@ -272,9 +270,6 @@ button:hover {
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   /*Style*/
-  .main--quiz {
-    height: calc(100vh - 300px);
-  }
   #quiz .question {
     font-size: 2rem;
     line-height: 2.8rem;
@@ -321,6 +316,57 @@ button:hover {
 
 @media only screen and (min-width: 1224px) {
   /*Style*/
+  .main--quiz {
+    width: calc(100vw - 100px);
+    margin: 0px 50px;
+  }
+  #quiz {
+    width: calc(100vw - 400px);
+    padding: 50px;
+    margin: 0 auto;
+  }
+  #quiz .question {
+    font-size: 2rem;
+    line-height: 2.8rem;
+    text-indent: 30px;
+    padding: 40px;
+  }
+  #quiz .answers label {
+    cursor: pointer;
+  }
+  #quiz .answers label [type="radio"] {
+    display: none;
+  }
+  #quiz .answers label [type="radio"] + span {
+    width: calc(100vw - 482px);
+    padding: 40px;
+    font-size: 1.7rem;
+  }
+  #quiz .answers label [type="radio"] + span:hover {
+    font-size: 2rem;
+  }
+  #quiz .answers label [type="radio"]:checked + span {
+    font-size: 2rem;
+  }
+  button {
+    font-size: 2rem;
+    padding: 20px;
+    margin: 20px 0px 0px 20px;
+  }
+  #results {
+    font-size: 2rem;
+    line-height: 2.8rem;
+    text-indent: 30px;
+    padding: 40px;
+  }
+  #results span {
+    color: #fbff00;
+    font-weight: 600;
+  }
+  #return {
+    display: none;
+    margin: 0px 40px 40px 40px;
+  }
 }
 
 .btn--hamburger {
@@ -865,6 +911,7 @@ footer {
   }
   p {
     border-bottom: none;
+    margin-top: 0px;
   }
   .main--p,
   .main--s,
@@ -876,8 +923,8 @@ footer {
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: 100px auto;
-        grid-template-rows: 100px auto;
+    -ms-grid-rows: 120px auto;
+        grid-template-rows: 120px auto;
   }
   .main--p p,
   .main--s p,
@@ -942,7 +989,7 @@ footer {
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
     grid-column: 3/4;
-    margin-left: 0px;
+    margin: 0px;
   }
   .main--s .s--info {
     -ms-grid-row: 2;

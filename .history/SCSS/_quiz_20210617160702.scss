@@ -249,15 +249,17 @@ button {
 //DESKTOP AND LAPTOP STYLE
 @media only screen  and (min-width : 1224px) {
     /*Style*/
+    /*Style*/
     .main--quiz{
         width: calc(100vw - 100px);
         margin: 0px 50px;
     }
     
     #quiz {
-        width: calc(100vw - 400px);
-        padding: 50px ;
-        margin: 0 auto;
+        width: calc(100vw - 150px);
+        padding: 20px 10px;
+        margin: 0;
+        height: fit-content;
 
         & .question{
             font-size: 2rem;
@@ -277,7 +279,7 @@ button {
                 }
     
                 & [type="radio"] + span {
-                    width: calc(100vw - 482px);
+                    width: calc(100vw - 132px);
                     padding: 40px;
                     font-size: 1.7rem;
     

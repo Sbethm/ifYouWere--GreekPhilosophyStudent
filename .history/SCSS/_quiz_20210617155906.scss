@@ -1,9 +1,11 @@
 .main--quiz{
+    position: relative;
+    height: calc(100vh - 200px); //200px is for the footer and header which are 100px each
     width: calc(100vw - 30px);
     padding-top: 100px;
     margin: 0px 15px;
     background: rgba(44, 43, 44, 0.63);
-    overflow: scroll;
+    overflow: clip;
     scroll-behavior: smooth;
 }
 
@@ -119,6 +121,10 @@ button {
 //TABLET STYLING LANDSCAPE
 @media only screen and (min-device-width : 768px) and (max-device-width : 1366px) and (orientation : landscape) {
     /* Styles */
+    .main--quiz{
+        height: calc(100vh - 300px); //300px is for the footer and header which are 150px each
+    }
+    
     #quiz {
 
         & .question{
@@ -184,6 +190,10 @@ button {
 //TABLET STYLE PORTRAIT
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
     /*Style*/
+    .main--quiz{
+        height: calc(100vh - 300px); //300px is for the footer and header which are 150px each
+    }
+    
     #quiz {
 
         & .question{
@@ -249,15 +259,18 @@ button {
 //DESKTOP AND LAPTOP STYLE
 @media only screen  and (min-width : 1224px) {
     /*Style*/
+    /*Style*/
     .main--quiz{
+        height: calc(100vh - 200px); //300px is for the footer and header which are 150px each
         width: calc(100vw - 100px);
         margin: 0px 50px;
     }
     
     #quiz {
-        width: calc(100vw - 400px);
-        padding: 50px ;
-        margin: 0 auto;
+        width: calc(100vw - 150px);
+        padding: 20px 10px;
+        margin: 0;
+        height: fit-content;
 
         & .question{
             font-size: 2rem;
@@ -277,7 +290,7 @@ button {
                 }
     
                 & [type="radio"] + span {
-                    width: calc(100vw - 482px);
+                    width: calc(100vw - 132px);
                     padding: 40px;
                     font-size: 1.7rem;
     

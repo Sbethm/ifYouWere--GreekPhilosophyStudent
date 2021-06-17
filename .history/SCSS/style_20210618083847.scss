@@ -536,7 +536,7 @@ footer {
 
     p {
         border-bottom: none;
-        margin-top: 0px;
+        padding-top: 20px;
     }
 
     .main--p,
@@ -547,7 +547,7 @@ footer {
         margin: 0 50px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 120px auto;
+        grid-template-rows: 100px auto;
 
         & p {
             text-align: center;
@@ -606,7 +606,7 @@ footer {
         & .s--img {
             grid-row: 2/3;
             grid-column: 3/4;  
-            margin: 0px; 
+            margin-left: 0px; 
             //display: block;
            // float: right;
         }

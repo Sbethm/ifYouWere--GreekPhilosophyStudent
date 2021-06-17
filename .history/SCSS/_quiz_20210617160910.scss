@@ -258,6 +258,8 @@ button {
         width: calc(100vw - 400px);
         padding: 50px ;
         margin: 0 auto;
+        height: fit-content;
+        box
 
         & .question{
             font-size: 2rem;
@@ -277,7 +279,7 @@ button {
                 }
     
                 & [type="radio"] + span {
-                    width: calc(100vw - 482px);
+                    width: calc(100vw - 132px);
                     padding: 40px;
                     font-size: 1.7rem;
     
